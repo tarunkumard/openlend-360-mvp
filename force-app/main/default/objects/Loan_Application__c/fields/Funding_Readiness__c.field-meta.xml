@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Funding_Readiness__c</fullName>
+    <description>Whether the loan can be funded: no open conditions, no outstanding required documents, an approved amount, and a closing date.</description>
+    <inlineHelpText>Shows Ready to fund, or what is still missing.</inlineHelpText>
+    <label>Funding Readiness</label>
+    <formula>IF(
+  AND(Open_Approval_Conditions__c + Open_Closing_Conditions__c = 0, Required_Documents_Outstanding__c = 0, NOT(ISBLANK(Approved_Amount__c)), NOT(ISBLANK(Closing_Date__c))),
+  "Ready to fund",
+  "Not ready: "
+  &amp; IF(Open_Approval_Conditions__c + Open_Closing_Conditions__c &gt; 0, TEXT(Open_Approval_Conditions__c + Open_Closing_Conditions__c) &amp; " open condition(s). ", "")
+  &amp; IF(Required_Documents_Outstanding__c &gt; 0, TEXT(Required_Documents_Outstanding__c) &amp; " required document(s) outstanding. ", "")
+  &amp; IF(ISBLANK(Approved_Amount__c), "No approved amount. ", "")
+  &amp; IF(ISBLANK(Closing_Date__c), "No closing date.", "")
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <type>Text</type>
+</CustomField>

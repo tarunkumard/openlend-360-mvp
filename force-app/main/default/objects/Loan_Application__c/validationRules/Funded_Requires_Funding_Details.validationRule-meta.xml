@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Funded_Requires_Funding_Details</fullName>
+    <active>true</active>
+    <description>Moving to Funded needs an approved amount, a funding date, and every approval and closing condition cleared.</description>
+    <errorConditionFormula>AND(
+  ISCHANGED(Stage__c),
+  ISPICKVAL(Stage__c, "Booked"),
+  OR(
+    ISBLANK(Approved_Amount__c),
+    ISBLANK(Funding_Date__c),
+    Open_Approval_Conditions__c + Open_Closing_Conditions__c &gt; 0
+  )
+)</errorConditionFormula>
+    <errorDisplayField>Stage__c</errorDisplayField>
+    <errorMessage>Before moving to Funded, enter the Approved Amount and Funding Date, and satisfy or waive every prior-to-approval and prior-to-closing condition.</errorMessage>
+</ValidationRule>

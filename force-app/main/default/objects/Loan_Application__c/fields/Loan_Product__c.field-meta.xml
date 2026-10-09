@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Loan_Product__c</fullName>
+    <description>The bank product this request is being made under. Supplies amount and term limits.</description>
+    <inlineHelpText>Choose the loan product. The requested amount must fall inside the product's limits.</inlineHelpText>
+    <label>Loan Product</label>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <referenceTo>Loan_Product__c</referenceTo>
+    <relationshipLabel>Loan Applications</relationshipLabel>
+    <relationshipName>Loan_Applications</relationshipName>
+    <required>true</required>
+    <type>Lookup</type>
+</CustomField>

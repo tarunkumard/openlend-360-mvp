@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Approved_Requires_Conditions_Cleared</fullName>
+    <active>true</active>
+    <description>Prior-to-approval conditions must be satisfied or waived before final approval.</description>
+    <errorConditionFormula>AND(ISCHANGED(Stage__c), ISPICKVAL(Stage__c, "Approved"), Open_Approval_Conditions__c &gt; 0)</errorConditionFormula>
+    <errorDisplayField>Stage__c</errorDisplayField>
+    <errorMessage>Prior-to-approval conditions are still open. Satisfy or waive them before moving to Approved.</errorMessage>
+</ValidationRule>

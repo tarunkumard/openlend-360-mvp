@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Collateral_Required__c</fullName>
+    <description>Whether loans under this product must be secured by collateral.</description>
+    <inlineHelpText>Whether loans under this product must be secured by collateral.</inlineHelpText>
+    <label>Collateral Required</label>
+    <defaultValue>false</defaultValue>
+    <type>Checkbox</type>
+</CustomField>

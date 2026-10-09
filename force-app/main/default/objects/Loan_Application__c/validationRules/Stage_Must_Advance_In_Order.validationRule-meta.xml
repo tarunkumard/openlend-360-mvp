@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Stage_Must_Advance_In_Order</fullName>
+    <active>true</active>
+    <description>Stages move forward one step at a time. Credit Review may go straight to Approved. Declined and Withdrawn are allowed from any stage.</description>
+    <errorConditionFormula>AND(
+  NOT(ISNEW()),
+  ISCHANGED(Stage__c),
+  CASE(TEXT(PRIORVALUE(Stage__c)), "Draft", 1, "Intake Complete", 2, "Documents Pending", 3, "Underwriting", 4, "Credit Review", 5, "Conditionally Approved", 6, "Approved", 7, "Closing", 8, "Booked", 9, 0) &gt; 0,
+  CASE(TEXT(Stage__c), "Draft", 1, "Intake Complete", 2, "Documents Pending", 3, "Underwriting", 4, "Credit Review", 5, "Conditionally Approved", 6, "Approved", 7, "Closing", 8, "Booked", 9, 0) &gt; CASE(TEXT(PRIORVALUE(Stage__c)), "Draft", 1, "Intake Complete", 2, "Documents Pending", 3, "Underwriting", 4, "Credit Review", 5, "Conditionally Approved", 6, "Approved", 7, "Closing", 8, "Booked", 9, 0) + 1,
+  NOT(AND(ISPICKVAL(PRIORVALUE(Stage__c), "Credit Review"), ISPICKVAL(Stage__c, "Approved")))
+)</errorConditionFormula>
+    <errorDisplayField>Stage__c</errorDisplayField>
+    <errorMessage>Stages must advance one step at a time. Move the application to the next stage in sequence.</errorMessage>
+</ValidationRule>

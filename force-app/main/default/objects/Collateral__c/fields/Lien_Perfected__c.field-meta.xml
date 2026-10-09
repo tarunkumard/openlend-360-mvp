@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lien_Perfected__c</fullName>
+    <description>Checked once the bank's lien has been legally perfected.</description>
+    <inlineHelpText>Checked once the bank's lien has been legally perfected.</inlineHelpText>
+    <label>Lien Perfected</label>
+    <defaultValue>false</defaultValue>
+    <type>Checkbox</type>
+</CustomField>

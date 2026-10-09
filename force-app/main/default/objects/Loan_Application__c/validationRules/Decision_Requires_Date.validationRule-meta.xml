@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Decision_Requires_Date</fullName>
+    <active>true</active>
+    <description>A decision date is required once a credit decision has been made.</description>
+    <errorConditionFormula>AND(OR(ISPICKVAL(Stage__c, "Conditionally Approved"), ISPICKVAL(Stage__c, "Approved"), ISPICKVAL(Stage__c, "Declined"), ISPICKVAL(Stage__c, "Closing"), ISPICKVAL(Stage__c, "Booked")), ISBLANK(Decision_Date__c))</errorConditionFormula>
+    <errorDisplayField>Decision_Date__c</errorDisplayField>
+    <errorMessage>Enter the Decision Date.</errorMessage>
+</ValidationRule>

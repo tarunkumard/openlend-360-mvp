@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Exposure__c</fullName>
+    <description>Existing exposure plus the requested amount. Compared with the house exposure limit by the Underwriting Recommendation flow.</description>
+    <inlineHelpText>Existing Exposure plus Requested Amount.</inlineHelpText>
+    <label>Total Exposure</label>
+    <formula>Existing_Exposure__c + Requested_Amount__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <precision>18</precision>
+    <scale>2</scale>
+    <type>Currency</type>
+</CustomField>

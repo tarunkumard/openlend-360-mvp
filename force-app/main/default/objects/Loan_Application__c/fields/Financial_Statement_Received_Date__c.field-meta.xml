@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Financial_Statement_Received_Date__c</fullName>
+    <description>Most recent date a financial statement checklist item was received.</description>
+    <inlineHelpText>When the latest financial statement was received.</inlineHelpText>
+    <label>Financial Statement Received Date</label>
+    <summarizedField>Loan_Document_Checklist__c.Received_Date__c</summarizedField>
+    <summaryFilterItems>
+        <field>Loan_Document_Checklist__c.Document_Type__c</field>
+        <operation>equals</operation>
+        <value>Financial Statement</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Loan_Document_Checklist__c.Loan_Application__c</summaryForeignKey>
+    <summaryOperation>max</summaryOperation>
+    <type>Summary</type>
+</CustomField>

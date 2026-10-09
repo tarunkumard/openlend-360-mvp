@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Approval_Requires_Approved_Amount</fullName>
+    <active>true</active>
+    <description>An approved amount is required once the application is approved.</description>
+    <errorConditionFormula>AND(OR(ISPICKVAL(Stage__c, "Conditionally Approved"), ISPICKVAL(Stage__c, "Approved"), ISPICKVAL(Stage__c, "Closing"), ISPICKVAL(Stage__c, "Booked")), OR(ISBLANK(Approved_Amount__c), Approved_Amount__c &lt;= 0))</errorConditionFormula>
+    <errorDisplayField>Approved_Amount__c</errorDisplayField>
+    <errorMessage>Enter an Approved Amount greater than zero.</errorMessage>
+</ValidationRule>

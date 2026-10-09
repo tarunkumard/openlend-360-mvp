@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Version__c</fullName>
+    <description>Version number of the memo for this application, starting at 1. Set by the Generate Credit Memo Draft flow.</description>
+    <inlineHelpText>Which version of the memo this is. Each new draft gets the next number.</inlineHelpText>
+    <label>Version</label>
+    <precision>3</precision>
+    <scale>0</scale>
+    <required>false</required>
+    <type>Number</type>
+</CustomField>

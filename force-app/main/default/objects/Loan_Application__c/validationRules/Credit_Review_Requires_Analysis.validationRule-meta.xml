@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Credit_Review_Requires_Analysis</fullName>
+    <active>true</active>
+    <description>Credit review needs a risk rating, a debt service coverage ratio, and a named approver.</description>
+    <errorConditionFormula>AND(
+  OR(ISPICKVAL(Stage__c, "Credit Review"), ISPICKVAL(Stage__c, "Conditionally Approved"), ISPICKVAL(Stage__c, "Approved"), ISPICKVAL(Stage__c, "Closing"), ISPICKVAL(Stage__c, "Booked")),
+  OR(ISBLANK(TEXT(Risk_Rating__c)), ISBLANK(Debt_Service_Coverage_Ratio__c), ISBLANK(Credit_Approver__c))
+)</errorConditionFormula>
+    <errorMessage>Enter the Risk Rating, Debt Service Coverage Ratio, and Credit Approver before credit review.</errorMessage>
+</ValidationRule>

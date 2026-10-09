@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Debt_Service_Coverage_Ratio__c</fullName>
+    <description>Cash flow available for debt service divided by total debt service. Entered by the underwriter in the MVP.</description>
+    <inlineHelpText>Cash flow available to pay debt, divided by annual debt payments. A value of 1.25 means cash flow covers payments 1.25 times.</inlineHelpText>
+    <label>Debt Service Coverage Ratio</label>
+    <precision>5</precision>
+    <scale>2</scale>
+    <required>false</required>
+    <type>Number</type>
+</CustomField>

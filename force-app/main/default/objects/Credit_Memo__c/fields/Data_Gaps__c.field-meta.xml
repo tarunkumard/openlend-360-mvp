@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Data_Gaps__c</fullName>
+    <description>Information that was missing when the draft was generated. Fill these in on the application and regenerate, or address them in the narrative.</description>
+    <inlineHelpText>Information that was missing when the draft was generated.</inlineHelpText>
+    <label>Data Gaps</label>
+    <length>32768</length>
+    <visibleLines>4</visibleLines>
+    <type>LongTextArea</type>
+</CustomField>

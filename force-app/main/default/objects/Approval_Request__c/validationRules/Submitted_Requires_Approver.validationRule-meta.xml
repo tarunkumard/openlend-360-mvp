@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Submitted_Requires_Approver</fullName>
+    <active>true</active>
+    <description>An approver is required once a request leaves Draft.</description>
+    <errorConditionFormula>AND(NOT(ISPICKVAL(Status__c, "Draft")), NOT(ISPICKVAL(Status__c, "Recalled")), ISBLANK(Approver__c))</errorConditionFormula>
+    <errorDisplayField>Approver__c</errorDisplayField>
+    <errorMessage>Select an Approver before submitting the request.</errorMessage>
+</ValidationRule>

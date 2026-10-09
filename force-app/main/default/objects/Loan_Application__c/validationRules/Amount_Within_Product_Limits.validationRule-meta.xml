@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Amount_Within_Product_Limits</fullName>
+    <active>true</active>
+    <description>Requested amount must fall inside the selected product's minimum and maximum.</description>
+    <errorConditionFormula>OR(
+  AND(NOT(ISBLANK(Loan_Product__r.Minimum_Amount__c)), Requested_Amount__c &lt; Loan_Product__r.Minimum_Amount__c),
+  AND(NOT(ISBLANK(Loan_Product__r.Maximum_Amount__c)), Requested_Amount__c &gt; Loan_Product__r.Maximum_Amount__c)
+)</errorConditionFormula>
+    <errorDisplayField>Requested_Amount__c</errorDisplayField>
+    <errorMessage>Requested Amount is outside the minimum and maximum allowed for the selected Loan Product.</errorMessage>
+</ValidationRule>

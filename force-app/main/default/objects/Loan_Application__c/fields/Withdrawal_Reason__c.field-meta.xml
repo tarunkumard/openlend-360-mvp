@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Withdrawal_Reason__c</fullName>
+    <description>Why the borrower or the bank withdrew the application. Required when the stage is Withdrawn.</description>
+    <inlineHelpText>Why the application was withdrawn.</inlineHelpText>
+    <label>Withdrawal Reason</label>
+    <required>false</required>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Borrower No Longer Needs Financing</fullName>
+                <default>false</default>
+                <label>Borrower No Longer Needs Financing</label>
+            </value>
+            <value>
+                <fullName>Financing Obtained Elsewhere</fullName>
+                <default>false</default>
+                <label>Financing Obtained Elsewhere</label>
+            </value>
+            <value>
+                <fullName>Terms Not Accepted</fullName>
+                <default>false</default>
+                <label>Terms Not Accepted</label>
+            </value>
+            <value>
+                <fullName>Project Cancelled</fullName>
+                <default>false</default>
+                <label>Project Cancelled</label>
+            </value>
+            <value>
+                <fullName>Borrower Unresponsive</fullName>
+                <default>false</default>
+                <label>Borrower Unresponsive</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <type>Picklist</type>
+</CustomField>

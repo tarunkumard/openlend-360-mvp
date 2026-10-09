@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Credit_Memo_Writer_Class__c</fullName>
+    <description>Apex class that writes credit memo narratives. CreditMemoTemplateWriter is the built-in rules-based writer. Point this at a class that implements CreditMemoSectionWriter to plug in an AI writer later.</description>
+    <externalId>false</externalId>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <inlineHelpText>Apex class that writes credit memo narratives. CreditMemoTemplateWriter is the built-in rules-based writer. Point this at a class that implements CreditMemoSectionWriter to plug in an AI writer later.</inlineHelpText>
+    <label>Credit Memo Writer Class</label>
+    <length>255</length>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

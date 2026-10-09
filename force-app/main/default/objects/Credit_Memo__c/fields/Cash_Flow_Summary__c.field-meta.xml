@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cash_Flow_Summary__c</fullName>
+    <description>Credit memo section: Cash available for debt service, coverage ratio, and how far cash flow could fall before coverage is lost.</description>
+    <inlineHelpText>Cash available for debt service, coverage ratio, and how far cash flow could fall before coverage is lost. Drafted automatically and edited by the underwriter.</inlineHelpText>
+    <label>Cash-Flow Summary</label>
+    <length>32768</length>
+    <visibleLines>4</visibleLines>
+    <type>LongTextArea</type>
+</CustomField>

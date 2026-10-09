@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Stage__c</fullName>
+    <description>Current position of the application in the origination lifecycle. Validation rules control which moves are allowed.</description>
+    <inlineHelpText>Where this application is in the lending process. Stages advance one step at a time and each step has entry requirements.</inlineHelpText>
+    <label>Stage</label>
+    <trackHistory>true</trackHistory>
+    <required>true</required>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Draft</fullName>
+                <default>true</default>
+                <label>Draft</label>
+            </value>
+            <value>
+                <fullName>Intake Complete</fullName>
+                <default>false</default>
+                <label>Intake Complete</label>
+            </value>
+            <value>
+                <fullName>Documents Pending</fullName>
+                <default>false</default>
+                <label>Document Collection</label>
+            </value>
+            <value>
+                <fullName>Underwriting</fullName>
+                <default>false</default>
+                <label>Underwriting</label>
+            </value>
+            <value>
+                <fullName>Credit Review</fullName>
+                <default>false</default>
+                <label>Credit Review</label>
+            </value>
+            <value>
+                <fullName>Conditionally Approved</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Conditionally Approved</label>
+            </value>
+            <value>
+                <fullName>Approved</fullName>
+                <default>false</default>
+                <label>Approved</label>
+            </value>
+            <value>
+                <fullName>Closing</fullName>
+                <default>false</default>
+                <label>Closing</label>
+            </value>
+            <value>
+                <fullName>Booked</fullName>
+                <default>false</default>
+                <label>Funded</label>
+            </value>
+            <value>
+                <fullName>Declined</fullName>
+                <default>false</default>
+                <label>Declined</label>
+            </value>
+            <value>
+                <fullName>Withdrawn</fullName>
+                <default>false</default>
+                <label>Withdrawn</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <type>Picklist</type>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Borrower_Account__c</fullName>
+    <description>The business that is requesting the loan and will be the legal borrower.</description>
+    <inlineHelpText>Select the business account that will be the legal borrower on this loan.</inlineHelpText>
+    <label>Borrower Account</label>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Loan Applications</relationshipLabel>
+    <relationshipName>Loan_Applications</relationshipName>
+    <required>true</required>
+    <type>Lookup</type>
+</CustomField>

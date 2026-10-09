@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Advance_Rate_In_Range</fullName>
+    <active>true</active>
+    <description>Advance rate must be between 0% and 100%.</description>
+    <errorConditionFormula>OR(Advance_Rate__c &lt; 0, Advance_Rate__c &gt; 1)</errorConditionFormula>
+    <errorDisplayField>Advance_Rate__c</errorDisplayField>
+    <errorMessage>Advance Rate must be between 0% and 100%.</errorMessage>
+</ValidationRule>

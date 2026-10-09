@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Use_Of_Funds_Detail__c</fullName>
+    <description>Breakdown of how the total project cost will be spent, one line per use. Feeds the sources and uses section of the credit memo.</description>
+    <inlineHelpText>List each use of funds on its own line, for example: Canning line 820,000.</inlineHelpText>
+    <label>Use of Funds Detail</label>
+    <length>32768</length>
+    <visibleLines>4</visibleLines>
+    <type>LongTextArea</type>
+</CustomField>

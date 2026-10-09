@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Completed_Date__c</fullName>
+    <description>Date the work was finished. Required when Status is Done.</description>
+    <inlineHelpText>Date the work was finished. Required when Status is Done.</inlineHelpText>
+    <label>Completed Date</label>
+    <required>false</required>
+    <type>Date</type>
+</CustomField>

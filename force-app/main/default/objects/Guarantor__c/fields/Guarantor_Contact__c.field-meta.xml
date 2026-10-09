@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Guarantor_Contact__c</fullName>
+    <description>The individual providing the guarantee. Use this or Guarantor Entity, not both.</description>
+    <inlineHelpText>The individual providing the guarantee. Use this or Guarantor Entity, not both.</inlineHelpText>
+    <label>Guarantor Contact</label>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Loan Guarantees</relationshipLabel>
+    <relationshipName>Loan_Guarantees</relationshipName>
+    <required>false</required>
+    <type>Lookup</type>
+</CustomField>

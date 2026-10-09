@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Underwriting_Requires_Documents</fullName>
+    <active>true</active>
+    <description>All required documents must be accepted or waived before the application enters Underwriting.</description>
+    <errorConditionFormula>AND(ISCHANGED(Stage__c), ISPICKVAL(Stage__c, "Underwriting"), Required_Documents_Outstanding__c &gt; 0)</errorConditionFormula>
+    <errorDisplayField>Stage__c</errorDisplayField>
+    <errorMessage>Required documents are still outstanding. Accept or waive them before moving to Underwriting.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Net_Operating_Income__c</fullName>
+    <description>Annual cash flow available to service debt. With Annual Debt Service, used by the Underwriting Recommendation flow to calculate the debt service coverage ratio.</description>
+    <inlineHelpText>Annual cash flow available to pay debt. Used to calculate the debt service coverage ratio.</inlineHelpText>
+    <label>Net Operating Income</label>
+    <precision>18</precision>
+    <scale>2</scale>
+    <required>false</required>
+    <type>Currency</type>
+</CustomField>

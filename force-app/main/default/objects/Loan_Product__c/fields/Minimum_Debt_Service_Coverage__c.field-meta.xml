@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Minimum_Debt_Service_Coverage__c</fullName>
+    <description>Lowest debt service coverage ratio lending policy allows for this product.</description>
+    <inlineHelpText>Lowest debt service coverage ratio lending policy allows for this product.</inlineHelpText>
+    <label>Minimum Debt Service Coverage</label>
+    <precision>5</precision>
+    <scale>2</scale>
+    <required>false</required>
+    <type>Number</type>
+</CustomField>

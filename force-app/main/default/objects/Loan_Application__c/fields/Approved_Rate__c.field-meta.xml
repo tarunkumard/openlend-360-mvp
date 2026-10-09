@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Approved_Rate__c</fullName>
+    <description>Annual interest rate approved by credit. May differ from the proposed Interest Rate.</description>
+    <inlineHelpText>The interest rate credit approved.</inlineHelpText>
+    <label>Approved Rate</label>
+    <precision>6</precision>
+    <scale>3</scale>
+    <required>false</required>
+    <type>Percent</type>
+</CustomField>

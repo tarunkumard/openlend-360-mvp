@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Responsible_User__c</fullName>
+    <description>User responsible for clearing the condition.</description>
+    <inlineHelpText>User responsible for clearing the condition.</inlineHelpText>
+    <label>Responsible User</label>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <referenceTo>User</referenceTo>
+    <relationshipLabel>Loan Conditions</relationshipLabel>
+    <relationshipName>Responsible_Loan_Conditions</relationshipName>
+    <required>false</required>
+    <type>Lookup</type>
+</CustomField>

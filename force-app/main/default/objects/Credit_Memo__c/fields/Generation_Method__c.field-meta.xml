@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Generation_Method__c</fullName>
+    <description>How the narrative was produced. Template is the built-in rules-based writer; AI Assisted is reserved for a future writer that calls a language model.</description>
+    <inlineHelpText>How the first draft of the narrative was produced.</inlineHelpText>
+    <label>Generation Method</label>
+    <required>false</required>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Template</fullName>
+                <default>true</default>
+                <label>Template</label>
+            </value>
+            <value>
+                <fullName>AI Assisted</fullName>
+                <default>false</default>
+                <label>AI Assisted</label>
+            </value>
+            <value>
+                <fullName>Manual</fullName>
+                <default>false</default>
+                <label>Manual</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <type>Picklist</type>
+</CustomField>

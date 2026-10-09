@@ -1,0 +1,7 @@
+{
+  "packageDirectories": [{ "path": "force-app/main", "default": true }],
+  "name": "openlend-360-mvp",
+  "namespace": "",
+  "sfdcLoginUrl": "https://login.salesforce.com",
+  "sourceApiVersion": "62.0"
+}

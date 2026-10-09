@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Final_Requires_Recommendation</fullName>
+    <active>true</active>
+    <description>A memo cannot be finalized without a recommendation and a final recommendation narrative.</description>
+    <errorConditionFormula>AND(ISPICKVAL(Status__c, "Final"), OR(ISBLANK(TEXT(Recommendation__c)), LEN(Final_Recommendation__c) = 0))</errorConditionFormula>
+    <errorDisplayField>Recommendation__c</errorDisplayField>
+    <errorMessage>Select a Recommendation and complete the Final Recommendation section before marking the memo Final.</errorMessage>
+</ValidationRule>

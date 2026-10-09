@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Satisfied_Date__c</fullName>
+    <description>Date the condition was satisfied. Required when Status is Satisfied.</description>
+    <inlineHelpText>Date the condition was satisfied. Required when Status is Satisfied.</inlineHelpText>
+    <label>Satisfied Date</label>
+    <required>false</required>
+    <type>Date</type>
+</CustomField>

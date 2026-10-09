@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Next_Best_Action__c</fullName>
+    <description>Calculated guidance on what should happen next, based on Stage and readiness counts.</description>
+    <inlineHelpText>Suggested next step for this application. Calculated automatically.</inlineHelpText>
+    <label>Next Best Action</label>
+    <formula>CASE(TEXT(Stage__c),
+"Draft", "Complete the borrower, product, and request details, then mark intake complete.",
+"Intake Complete", "Request the required documents from the borrower.",
+"Documents Pending", IF(Required_Documents_Outstanding__c &gt; 0, "Collect and review outstanding required documents (" &amp; TEXT(Required_Documents_Outstanding__c) &amp; " remaining).", "All required documents are accepted. Assign an underwriter and move to Underwriting."),
+"Underwriting", IF(ISBLANK(Underwriting_Recommendation__c), "Complete the financial analysis, then record the risk rating and debt service coverage ratio.", Underwriting_Recommendation__c),
+"Credit Review", "Credit approver to review the request and record a decision.",
+"Conditionally Approved", IF(Open_Approval_Conditions__c &gt; 0, "Clear the open prior-to-approval conditions (" &amp; TEXT(Open_Approval_Conditions__c) &amp; " remaining).", "Approval conditions are cleared. Move to Approved."),
+"Approved", "Prepare closing documents and schedule the closing.",
+"Closing", IF(Open_Closing_Conditions__c &gt; 0, "Clear the open prior-to-closing conditions (" &amp; TEXT(Open_Closing_Conditions__c) &amp; " remaining).", "Closing conditions are cleared. Book the loan."),
+"Booked", "Loan is booked. Hand off to servicing and monitor post-closing conditions.",
+"Declined", "Send the decision notice to the borrower and close out open work items.",
+"Withdrawn", "No further action. Close out open work items.",
+"")</formula>
+    <formulaTreatBlanksAs>BlankAsBlank</formulaTreatBlanksAs>
+    <type>Text</type>
+</CustomField>

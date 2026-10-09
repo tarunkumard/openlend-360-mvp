@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Borrower_Summary__c</fullName>
+    <description>Credit memo section: Who the borrower is: legal form, industry, location, age, size, and key contact.</description>
+    <inlineHelpText>Who the borrower is: legal form, industry, location, age, size, and key contact. Drafted automatically and edited by the underwriter.</inlineHelpText>
+    <label>Borrower Summary</label>
+    <length>32768</length>
+    <visibleLines>4</visibleLines>
+    <type>LongTextArea</type>
+</CustomField>

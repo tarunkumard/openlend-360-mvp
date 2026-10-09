@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Declined_By__c</fullName>
+    <description>Who declined the application. Set automatically when the stage changes to Declined.</description>
+    <inlineHelpText>Who declined the application.</inlineHelpText>
+    <label>Declined By</label>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <referenceTo>User</referenceTo>
+    <relationshipLabel>Loan Applications (Declined)</relationshipLabel>
+    <relationshipName>Loan_Applications_Declined</relationshipName>
+    <required>false</required>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Received_Requires_Date</fullName>
+    <active>true</active>
+    <description>A received date is required once a document has been received.</description>
+    <errorConditionFormula>AND(OR(ISPICKVAL(Status__c, "Received"), ISPICKVAL(Status__c, "In Review"), ISPICKVAL(Status__c, "Accepted")), ISBLANK(Received_Date__c))</errorConditionFormula>
+    <errorDisplayField>Received_Date__c</errorDisplayField>
+    <errorMessage>Enter the Received Date.</errorMessage>
+</ValidationRule>

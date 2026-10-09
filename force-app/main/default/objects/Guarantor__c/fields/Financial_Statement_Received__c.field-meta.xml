@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Financial_Statement_Received__c</fullName>
+    <description>Checked when the guarantor's financial statement is on file.</description>
+    <inlineHelpText>Checked when the guarantor's financial statement is on file.</inlineHelpText>
+    <label>Financial Statement Received</label>
+    <defaultValue>false</defaultValue>
+    <type>Checkbox</type>
+</CustomField>

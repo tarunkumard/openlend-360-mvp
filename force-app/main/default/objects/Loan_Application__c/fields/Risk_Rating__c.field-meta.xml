@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Risk_Rating__c</fullName>
+    <description>Internal credit risk grade assigned during underwriting. 1 is strongest, 8 is weakest.</description>
+    <inlineHelpText>Internal risk grade assigned by the underwriter. 1 is the strongest credit, 8 the weakest.</inlineHelpText>
+    <label>Risk Rating</label>
+    <trackHistory>true</trackHistory>
+    <required>false</required>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1 Excellent</fullName>
+                <default>false</default>
+                <label>1 Excellent</label>
+            </value>
+            <value>
+                <fullName>2 Strong</fullName>
+                <default>false</default>
+                <label>2 Strong</label>
+            </value>
+            <value>
+                <fullName>3 Good</fullName>
+                <default>false</default>
+                <label>3 Good</label>
+            </value>
+            <value>
+                <fullName>4 Satisfactory</fullName>
+                <default>false</default>
+                <label>4 Satisfactory</label>
+            </value>
+            <value>
+                <fullName>5 Watch</fullName>
+                <default>false</default>
+                <label>5 Watch</label>
+            </value>
+            <value>
+                <fullName>6 Special Mention</fullName>
+                <default>false</default>
+                <label>6 Special Mention</label>
+            </value>
+            <value>
+                <fullName>7 Substandard</fullName>
+                <default>false</default>
+                <label>7 Substandard</label>
+            </value>
+            <value>
+                <fullName>8 Doubtful</fullName>
+                <default>false</default>
+                <label>8 Doubtful</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <type>Picklist</type>
+</CustomField>

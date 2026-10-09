@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Limited_Guarantee_Requires_Amount</fullName>
+    <active>true</active>
+    <description>Limited guarantees must state an amount.</description>
+    <errorConditionFormula>AND(ISPICKVAL(Guarantee_Type__c, "Limited"), OR(ISBLANK(Guarantee_Amount__c), Guarantee_Amount__c &lt;= 0))</errorConditionFormula>
+    <errorDisplayField>Guarantee_Amount__c</errorDisplayField>
+    <errorMessage>Enter a Guarantee Amount for a limited guarantee.</errorMessage>
+</ValidationRule>

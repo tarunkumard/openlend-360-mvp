@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Credit_Memo_Complete__c</fullName>
+    <description>Checked by the underwriter when the credit memo is finished. Together with the Credit Review stage, this submits the application for approval.</description>
+    <inlineHelpText>Check when the credit memo is finished. In Credit Review this submits the application for approval.</inlineHelpText>
+    <label>Credit Memo Complete</label>
+    <defaultValue>false</defaultValue>
+    <type>Checkbox</type>
+</CustomField>

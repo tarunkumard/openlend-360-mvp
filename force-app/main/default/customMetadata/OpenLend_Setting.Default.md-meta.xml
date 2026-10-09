@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Default</label>
+    <protected>false</protected>
+    <values>
+        <field>Minimum_DSCR__c</field>
+        <value xsi:type="xsd:double">1.25</value>
+    </values>
+    <values>
+        <field>Maximum_LTV_Percent__c</field>
+        <value xsi:type="xsd:double">80</value>
+    </values>
+    <values>
+        <field>Maximum_Total_Exposure__c</field>
+        <value xsi:type="xsd:double">5000000</value>
+    </values>
+    <values>
+        <field>Credit_Officer_Limit__c</field>
+        <value xsi:type="xsd:double">250000</value>
+    </values>
+    <values>
+        <field>Senior_Credit_Officer_Limit__c</field>
+        <value xsi:type="xsd:double">1000000</value>
+    </values>
+    <values>
+        <field>Senior_Review_Risk_Rating__c</field>
+        <value xsi:type="xsd:double">5</value>
+    </values>
+    <values>
+        <field>Committee_Risk_Rating__c</field>
+        <value xsi:type="xsd:double">6</value>
+    </values>
+    <values>
+        <field>Guarantor_Document_Threshold__c</field>
+        <value xsi:type="xsd:double">250000</value>
+    </values>
+    <values>
+        <field>Enhanced_Financials_Threshold__c</field>
+        <value xsi:type="xsd:double">500000</value>
+    </values>
+    <values>
+        <field>Environmental_Report_Threshold__c</field>
+        <value xsi:type="xsd:double">1000000</value>
+    </values>
+    <values>
+        <field>Approval_Validity_Days__c</field>
+        <value xsi:type="xsd:double">90</value>
+    </values>
+    <values>
+        <field>Credit_Memo_Writer_Class__c</field>
+        <value xsi:type="xsd:string">CreditMemoTemplateWriter</value>
+    </values>
+</CustomMetadata>

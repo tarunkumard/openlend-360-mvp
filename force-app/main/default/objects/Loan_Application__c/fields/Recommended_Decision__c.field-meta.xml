@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Recommended_Decision__c</fullName>
+    <description>The underwriter's recommended credit decision. Set from the final credit memo, or entered directly. Required to enter Credit Review.</description>
+    <inlineHelpText>The underwriter's recommendation. Filled in when the credit memo is finalized.</inlineHelpText>
+    <label>Recommended Decision</label>
+    <required>false</required>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Approve</fullName>
+                <default>false</default>
+                <label>Approve</label>
+            </value>
+            <value>
+                <fullName>Approve with Conditions</fullName>
+                <default>false</default>
+                <label>Approve with Conditions</label>
+            </value>
+            <value>
+                <fullName>Decline</fullName>
+                <default>false</default>
+                <label>Decline</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <type>Picklist</type>
+</CustomField>

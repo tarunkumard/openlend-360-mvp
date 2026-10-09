@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Snapshot_DSCR__c</fullName>
+    <description>Debt service coverage ratio when the draft was generated.</description>
+    <inlineHelpText>Debt service coverage ratio when the draft was generated.</inlineHelpText>
+    <label>Snapshot DSCR</label>
+    <precision>6</precision>
+    <scale>2</scale>
+    <required>false</required>
+    <type>Number</type>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Other_Funding_Sources__c</fullName>
+    <description>Funding from sources other than this loan and the borrower, such as a grant or another lender.</description>
+    <inlineHelpText>Any other funding for the project, such as a grant or another lender.</inlineHelpText>
+    <label>Other Funding Sources</label>
+    <precision>18</precision>
+    <scale>2</scale>
+    <required>false</required>
+    <type>Currency</type>
+</CustomField>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Superseded_Memo_Is_Locked</fullName>
+    <active>true</active>
+    <description>A superseded memo stays superseded.</description>
+    <errorConditionFormula>AND(NOT(ISNEW()), ISPICKVAL(PRIORVALUE(Status__c), "Superseded"), NOT(ISPICKVAL(Status__c, "Superseded")))</errorConditionFormula>
+    <errorDisplayField>Status__c</errorDisplayField>
+    <errorMessage>This memo has been replaced by a newer version and cannot be reopened.</errorMessage>
+</ValidationRule>

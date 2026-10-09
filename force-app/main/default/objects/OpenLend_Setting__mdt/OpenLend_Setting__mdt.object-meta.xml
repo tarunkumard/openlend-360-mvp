@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Configurable thresholds used by the OpenLend 360 flows. The flows read the record named Default.</description>
+    <label>OpenLend Setting</label>
+    <pluralLabel>OpenLend Settings</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

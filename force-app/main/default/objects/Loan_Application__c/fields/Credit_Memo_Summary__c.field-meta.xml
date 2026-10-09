@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Credit_Memo_Summary__c</fullName>
+    <description>The underwriter's written credit summary and recommendation. Stands in for the Credit Memo object until phase 2.</description>
+    <inlineHelpText>The underwriter's written summary and recommendation for the approver.</inlineHelpText>
+    <label>Credit Memo Summary</label>
+    <length>32768</length>
+    <visibleLines>4</visibleLines>
+    <type>LongTextArea</type>
+</CustomField>

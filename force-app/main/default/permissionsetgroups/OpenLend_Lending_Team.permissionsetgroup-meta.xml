@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>For bankers who both originate and package loans. Combines Relationship Manager and Loan Officer access.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>OpenLend Lending Team</label>
+    <permissionSets>OpenLend_Relationship_Manager</permissionSets>
+    <permissionSets>OpenLend_Loan_Officer</permissionSets>
+</PermissionSetGroup>

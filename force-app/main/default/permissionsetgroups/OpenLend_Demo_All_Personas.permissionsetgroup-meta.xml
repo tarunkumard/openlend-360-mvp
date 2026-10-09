@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>For demo orgs with few user licences. Lets one user act as every persona. Not for production use: it defeats segregation of duties.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>OpenLend Demo All Personas</label>
+    <permissionSets>OpenLend_Relationship_Manager</permissionSets>
+    <permissionSets>OpenLend_Loan_Officer</permissionSets>
+    <permissionSets>OpenLend_Underwriter</permissionSets>
+    <permissionSets>OpenLend_Credit_Approver</permissionSets>
+    <permissionSets>OpenLend_Operations_User</permissionSets>
+</PermissionSetGroup>

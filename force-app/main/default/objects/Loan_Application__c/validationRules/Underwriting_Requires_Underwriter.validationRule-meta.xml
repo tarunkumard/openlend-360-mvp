@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Underwriting_Requires_Underwriter</fullName>
+    <active>true</active>
+    <description>An underwriter must be assigned from Underwriting onward.</description>
+    <errorConditionFormula>AND(OR(ISPICKVAL(Stage__c, "Underwriting"), ISPICKVAL(Stage__c, "Credit Review"), ISPICKVAL(Stage__c, "Conditionally Approved"), ISPICKVAL(Stage__c, "Approved"), ISPICKVAL(Stage__c, "Closing"), ISPICKVAL(Stage__c, "Booked")), ISBLANK(Underwriter__c))</errorConditionFormula>
+    <errorDisplayField>Underwriter__c</errorDisplayField>
+    <errorMessage>Assign an Underwriter before moving the application into Underwriting.</errorMessage>
+</ValidationRule>

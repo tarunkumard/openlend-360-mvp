@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Work_Type__c</fullName>
+    <description>Category of work.</description>
+    <inlineHelpText>Category of work.</inlineHelpText>
+    <label>Work Type</label>
+    <required>false</required>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Document Review</fullName>
+                <default>false</default>
+                <label>Document Review</label>
+            </value>
+            <value>
+                <fullName>Financial Analysis</fullName>
+                <default>false</default>
+                <label>Financial Analysis</label>
+            </value>
+            <value>
+                <fullName>Site Visit</fullName>
+                <default>false</default>
+                <label>Site Visit</label>
+            </value>
+            <value>
+                <fullName>Appraisal Order</fullName>
+                <default>false</default>
+                <label>Appraisal Order</label>
+            </value>
+            <value>
+                <fullName>Closing Preparation</fullName>
+                <default>false</default>
+                <label>Closing Preparation</label>
+            </value>
+            <value>
+                <fullName>Booking</fullName>
+                <default>false</default>
+                <label>Booking</label>
+            </value>
+            <value>
+                <fullName>Follow Up</fullName>
+                <default>false</default>
+                <label>Follow Up</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <type>Picklist</type>
+</CustomField>

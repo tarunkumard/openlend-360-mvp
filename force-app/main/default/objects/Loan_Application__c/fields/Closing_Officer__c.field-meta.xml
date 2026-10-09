@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Closing_Officer__c</fullName>
+    <description>Operations user responsible for closing the loan.</description>
+    <inlineHelpText>The person handling closing.</inlineHelpText>
+    <label>Closing Officer</label>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <referenceTo>User</referenceTo>
+    <relationshipLabel>Loan Applications (Closing Officer)</relationshipLabel>
+    <relationshipName>Loan_Applications_As_Closing_Officer</relationshipName>
+    <required>false</required>
+    <type>Lookup</type>
+</CustomField>

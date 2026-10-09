@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Decline_Reason_Only_When_Declined</fullName>
+    <active>true</active>
+    <description>Decline reason should only be filled in for declined applications.</description>
+    <errorConditionFormula>AND(NOT(ISPICKVAL(Stage__c, "Declined")), NOT(ISBLANK(TEXT(Decline_Reason__c))))</errorConditionFormula>
+    <errorDisplayField>Decline_Reason__c</errorDisplayField>
+    <errorMessage>Decline Reason can only be set when the Stage is Declined.</errorMessage>
+</ValidationRule>

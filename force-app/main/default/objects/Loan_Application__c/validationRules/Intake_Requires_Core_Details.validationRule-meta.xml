@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Intake_Requires_Core_Details</fullName>
+    <active>true</active>
+    <description>Leaving Draft requires the core request details.</description>
+    <errorConditionFormula>AND(
+  OR(ISPICKVAL(Stage__c, "Intake Complete"), ISPICKVAL(Stage__c, "Documents Pending"), ISPICKVAL(Stage__c, "Underwriting"), ISPICKVAL(Stage__c, "Credit Review"), ISPICKVAL(Stage__c, "Conditionally Approved"), ISPICKVAL(Stage__c, "Approved"), ISPICKVAL(Stage__c, "Closing"), ISPICKVAL(Stage__c, "Booked")),
+  OR(ISBLANK(Primary_Contact__c), ISBLANK(TEXT(Purpose__c)), ISBLANK(TEXT(Loan_Type__c)), ISBLANK(Term_Months__c), ISBLANK(Relationship_Manager__c), ISBLANK(Submission_Date__c))
+)</errorConditionFormula>
+    <errorMessage>Before leaving Draft, enter the Primary Contact, Purpose, Loan Type, Term Months, Relationship Manager, and Submission Date.</errorMessage>
+</ValidationRule>

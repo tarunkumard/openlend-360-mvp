@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Primary_Contact__c</fullName>
+    <description>The main person at the borrower for this request.</description>
+    <inlineHelpText>The person you work with day to day on this application.</inlineHelpText>
+    <label>Primary Contact</label>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Loan Applications</relationshipLabel>
+    <relationshipName>Loan_Applications</relationshipName>
+    <required>false</required>
+    <type>Lookup</type>
+</CustomField>

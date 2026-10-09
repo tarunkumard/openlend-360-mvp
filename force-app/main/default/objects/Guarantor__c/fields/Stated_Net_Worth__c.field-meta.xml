@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Stated_Net_Worth__c</fullName>
+    <description>Net worth from the guarantor's financial statement.</description>
+    <inlineHelpText>Net worth from the guarantor's financial statement.</inlineHelpText>
+    <label>Stated Net Worth</label>
+    <precision>18</precision>
+    <scale>2</scale>
+    <required>false</required>
+    <type>Currency</type>
+</CustomField>

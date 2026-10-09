@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Externally_Visible__c</fullName>
+    <description>Marks the item as safe to show to the borrower in a future self-service portal.</description>
+    <inlineHelpText>Marks the item as safe to show to the borrower in a future self-service portal.</inlineHelpText>
+    <label>Externally Visible</label>
+    <defaultValue>false</defaultValue>
+    <type>Checkbox</type>
+</CustomField>

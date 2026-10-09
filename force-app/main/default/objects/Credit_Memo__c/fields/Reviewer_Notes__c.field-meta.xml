@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reviewer_Notes__c</fullName>
+    <description>Notes from the reviewer or approver. Not part of the memo narrative.</description>
+    <inlineHelpText>Notes from the reviewer or approver. Not part of the memo narrative.</inlineHelpText>
+    <label>Reviewer Notes</label>
+    <length>32768</length>
+    <visibleLines>4</visibleLines>
+    <type>LongTextArea</type>
+</CustomField>

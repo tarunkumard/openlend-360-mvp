@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Risk_Rating_Number__c</fullName>
+    <description>Numeric form of the risk rating (1 to 8). Used by the Approval Submission flow to pick the approval level.</description>
+    <inlineHelpText>The risk rating as a number from 1 to 8.</inlineHelpText>
+    <label>Risk Rating Number</label>
+    <formula>IF(ISBLANK(TEXT(Risk_Rating__c)), NULL, VALUE(LEFT(TEXT(Risk_Rating__c), 1)))</formula>
+    <formulaTreatBlanksAs>BlankAsBlank</formulaTreatBlanksAs>
+    <precision>18</precision>
+    <scale>0</scale>
+    <type>Number</type>
+</CustomField>

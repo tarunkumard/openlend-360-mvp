@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Finalized_By__c</fullName>
+    <description>Who marked the memo Final. Set automatically.</description>
+    <inlineHelpText>Who marked the memo Final. Set automatically.</inlineHelpText>
+    <label>Finalized By</label>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <referenceTo>User</referenceTo>
+    <relationshipLabel>Credit Memos Finalized</relationshipLabel>
+    <relationshipName>Credit_Memos_Finalized</relationshipName>
+    <required>false</required>
+    <type>Lookup</type>
+</CustomField>

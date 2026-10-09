@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Snapshot_Total_Exposure__c</fullName>
+    <description>Existing plus requested exposure when the draft was generated.</description>
+    <inlineHelpText>Existing plus requested exposure when the draft was generated.</inlineHelpText>
+    <label>Snapshot Total Exposure</label>
+    <precision>18</precision>
+    <scale>2</scale>
+    <required>false</required>
+    <type>Currency</type>
+</CustomField>

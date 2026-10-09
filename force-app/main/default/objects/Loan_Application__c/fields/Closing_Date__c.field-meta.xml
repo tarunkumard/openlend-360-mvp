@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Closing_Date__c</fullName>
+    <description>Scheduled or actual closing date.</description>
+    <inlineHelpText>When the loan closes or is scheduled to close.</inlineHelpText>
+    <label>Closing Date</label>
+    <required>false</required>
+    <type>Date</type>
+</CustomField>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Collateral_Description__c</fullName>
+    <description>Description of the asset, such as address, make and model, or account.</description>
+    <inlineHelpText>Description of the asset, such as address, make and model, or account.</inlineHelpText>
+    <label>Collateral Description</label>
+    <required>false</required>
+    <type>TextArea</type>
+</CustomField>
